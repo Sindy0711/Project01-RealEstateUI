@@ -12,7 +12,7 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
-/* Common */
+/* =========== Common ============ */
 a {
   text-decoration: none;
 }
@@ -20,13 +20,17 @@ a {
 .btn {
   display: inline-block;
   min-width: 98px;
-  border-radius: 8px;
+  border-radius: 12px;
   background: var(--primary-color);
   text-align: center;
   font-weight: 500;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   padding: 18px 16px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
 }
 .btn:hover {
   opacity: 0.9;
@@ -38,11 +42,12 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-/* header */
+/* ============== header =============== */
 
 .header {
   background: #e6f0ff;
-  height: 100vh;
+  height: 85vh;
+  position: relative;
 }
 
 .navbar {
@@ -79,6 +84,7 @@ a {
 
 .btn__signUp {
   padding: 13px 16px;
+  font-size: 1.4rem;
 }
 
 .hero {
@@ -115,4 +121,118 @@ a {
 .hero .hero__cta {
   min-width: 170px;
   margin-top: 40px;
+}
+
+.hero__img {
+  position: absolute;
+  bottom: 0;
+  right: calc((100vw - 1100px) / 2 - 100px);
+}
+
+/* =========== Clients ============ */
+.clients {
+  margin-top: 122px;
+}
+
+.clients .row,
+.images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients desc {
+  color: #7d8589;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.clients .images {
+  margin-top: 96px;
+}
+
+.row-desc {
+  margin-top: 23px;
+}
+
+/* =========== Guides ============ */
+
+.guides {
+  margin-top: 200px;
+}
+.guides .sub-title {
+  text-align: center;
+  position: relative;
+  color: #000339;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.guides .sub-title::before {
+  content: "";
+  display: inline-block;
+  width: 41px;
+  height: 4px;
+  border-radius: 12px;
+  background: #000339;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.guides .desc {
+  color: #5a6473;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 20px auto 0;
+  width: 459px;
+}
+
+.list_guide {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.guide_item {
+  margin: 0 70px;
+  text-align: center;
+}
+
+.guide_item .title {
+  color: #3b3c45;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 26px;
+}
+
+.guide_item .link {
+  color: #0689ff;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.guide_item .arrow-right {
+  margin-left: 2px;
+}
+
+.guide-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.guide-cta .btn {
+  border-radius: 12px;
+  font-size: 1.3rem;
 }
